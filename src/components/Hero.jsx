@@ -37,7 +37,14 @@ const Hero = () => {
       delay: 1.5,
       backgroundColor: "#dfa141",
     });
+    gsap.to("#boy", {
+      x: 0,
+      duration: 1,
+      opacity: 1,
+      ease: "power2.in",
+      delay: 1.5,
 
+    });
     gsap.fromTo(
       "#instagram",
       { rotation: 50, x: 500, duration: 2, ease: "circ.in" },
@@ -94,27 +101,27 @@ const Hero = () => {
 
   return (
     <section className="py-6">
-      <div className="grid grid-cols-2 gap-6 ">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-6 ">
         <div>
           <h2
             id="welcome"
-            className="font-bold text-orange text-7xl mt-4 opacity-0"
+            className="font-bold text-orange text-4xl md:text-7xl mt-4 opacity-0"
           >
             Welcome
           </h2>
           <p
             id="sub-heading"
-            className="font-bold text-white text-7xl  opacity-0"
+            className="font-bold text-white text-4xl md:text-7xl  opacity-0"
           >
             Thanksgiving
           </p>
           <p
             id="thanks"
-            className="font-bold text-white text-4xl my-7 opacity-0"
+            className="font-bold text-white text-2xl  md:text-4xl my-7 opacity-0"
           >
             Gather here with grateful hearts.
           </p>
-          <p ref={paragraphRef} className="font-medium text-blue text-xl my-5 ">
+          <p ref={paragraphRef} className="font-medium text-blue text-lg md:text-xl my-5 ">
             Lorem{" "}
             <span ref={spanRef} className="text-yellow">
               ipsum dolor
@@ -124,45 +131,52 @@ const Hero = () => {
             <span className="text-yellow">tempor lacus</span> vel facilisis. .
           </p>
           <div className="my-6">
-            <button
-              id="read-btn"
-              className="bg-orange px-6 py-3 rounded-sm font-medium text-lg hover:bg-orange"
-            >
-              Read more
-            </button>
+            <div className="flex flex-row md:flex-col gap-6 ">
+              <div>
+                <button
+                  id="read-btn"
+                  className="bg-orange px-4 py-2 md:px-6 md:py-3 rounded-sm font-medium text-base md:text-lg hover:bg-orange"
+                >
+                  Read more
+                </button>
+              </div>
+
+              <div className="flex flex-1 gap-2 ">
+                <img
+                  id="instagram"
+                  src={instagram}
+                  height={40}
+                  width={40}
+                  alt="instagram"
+                />
+                <img
+                  id="facebook"
+                  src={facebook}
+                  height={40}
+                  width={40}
+                  alt="facebook"
+                />
+                <img
+                  id="twitter"
+                  src={twitter}
+                  height={40}
+                  width={40}
+                  alt="twitter"
+                />
+              </div>
+            </div>
+
           </div>
-          <div className="flex flex-1 gap-2">
-            <img
-              id="instagram"
-              src={instagram}
-              height={40}
-              width={40}
-              alt="instagram"
-            />
-            <img
-              id="facebook"
-              src={facebook}
-              height={40}
-              width={40}
-              alt="facebook"
-            />
-            <img
-              id="twitter"
-              src={twitter}
-              height={40}
-              width={40}
-              alt="twitter"
-            />
-          </div>
+
         </div>
-        <div className="flex flex-col items-center relative">
-          <img src={boy} width={300} height={40} className="absolute top-0" />
+        <div className="flex flex-col items-center relative h-72 md:h-full">
+          <img id='boy' src={boy} className="absolute top-0 w-56 md:w-80 opacity-0 " />
           <img
             id="food"
             src={food}
-            width={160}
-            height={40}
-            className="absolute bottom-1 right-36"
+            // width={160}
+            // height={40}
+            className="w-28 md:w-40 absolute -bottom-8 md:bottom-1 right-20  md:right-36 xl:right-52"
           />
         </div>
       </div>

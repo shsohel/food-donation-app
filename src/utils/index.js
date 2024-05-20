@@ -6,6 +6,7 @@ import facebook from "/assets/images/Facebook_Icon.png";
 import twitter from "/assets/images/Twitter_Icon.png";
 import boy from "/assets/images/boy_with_rounded.png";
 import food from "/assets/images/food_rounded.png";
+import hamburgerIcon from "/assets/images/menu_icon.png";
 
 import hero from "/assets/images/hero.jpeg";
 
@@ -47,4 +48,4 @@ export const explore2Img = explore2;
 export const chipImg = chip;
 export const frameImg = frame;
 
-export { bgImage, logo, instagram, facebook, twitter, boy, food };
+export { bgImage, logo, instagram, facebook, twitter, boy, food , hamburgerIcon};
