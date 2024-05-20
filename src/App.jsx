@@ -7,15 +7,15 @@ import { bgImage } from "./utils";
 const App = () => {
   return (
     <main
-      className="bg-black w-[100vw] h-[100vh] bg-no-repeat p-6 md:py-32 md:px-44 bg-fixed bg-cover bg-left-top overflow-hidden"
+      className="bg-black w-[100vw] h-[100vh] bg-no-repeat p-6 md:py-16 md:px-8  lg:py-32 lg:px-44  bg-cover bg-left-top "
       style={{
         backgroundImage: `url(${bgImage})`,
-        // height: "100% ",
-        // width: "100%",
+         height: "100% ",
+         width: "100%",
       }}
     >
-      <Navbar />
-      <Hero />
+    <Navbar />
+      <Hero /> 
     </main>
   );
 };

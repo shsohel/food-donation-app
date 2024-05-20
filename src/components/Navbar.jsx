@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <header className="w-full ">
       <nav id="nav" className="grid grid-cols-2  w-full items-center ">
-        <div id="logo" className="opacity-0 w-24 md:w-60">
+        <div id="logo" className="opacity-0 w-24 md:w-40 lg:w-60">
           <img src={logo} alt="logo" />
         </div>
         <div id="navItem" className="opacity-0 hidden md:block">

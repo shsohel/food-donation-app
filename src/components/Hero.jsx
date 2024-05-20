@@ -105,23 +105,23 @@ const Hero = () => {
         <div>
           <h2
             id="welcome"
-            className="font-bold text-orange text-4xl md:text-7xl mt-4 opacity-0"
+            className="font-bold text-orange text-4xl md:text-5xl lg:text-7xl mt-4 opacity-0"
           >
             Welcome
           </h2>
           <p
             id="sub-heading"
-            className="font-bold text-white text-4xl md:text-7xl  opacity-0"
+            className="font-bold text-white text-4xl md:text-5xl lg:text-7xl opacity-0"
           >
             Thanksgiving
           </p>
           <p
             id="thanks"
-            className="font-bold text-white text-2xl  md:text-4xl my-7 opacity-0"
+            className="font-bold text-white text-2xl  md:3xl lg:text-4xl my-7 opacity-0"
           >
             Gather here with grateful hearts.
           </p>
-          <p ref={paragraphRef} className="font-medium text-blue text-lg md:text-xl my-5 ">
+          <p ref={paragraphRef} className="font-medium text-blue text-base md:text-lg lg:text-xl my-5 ">
             Lorem{" "}
             <span ref={spanRef} className="text-yellow">
               ipsum dolor
@@ -135,7 +135,7 @@ const Hero = () => {
               <div>
                 <button
                   id="read-btn"
-                  className="bg-orange px-4 py-2 md:px-6 md:py-3 rounded-sm font-medium text-base md:text-lg hover:bg-orange"
+                  className="bg-orange px-4 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-sm font-medium text-base lg:text-lg hover:bg-orange"
                 >
                   Read more
                 </button>
@@ -170,13 +170,13 @@ const Hero = () => {
 
         </div>
         <div className="flex flex-col items-center relative h-72 md:h-full">
-          <img id='boy' src={boy} className="absolute top-0 w-56 md:w-80 opacity-0 " />
+          <img id='boy' src={boy} className="absolute top-0 w-56 md:60 lg:w-80 opacity-0 " />
           <img
             id="food"
             src={food}
             // width={160}
             // height={40}
-            className="w-28 md:w-40 absolute -bottom-8 md:bottom-1 right-20  md:right-36 xl:right-52"
+            className="w-28 md:w-28 lg:w-40 absolute -bottom-8 md:bottom-36 lg:bottom-1 right-20 md:right-8 lg:right-36 xl:right-52"
           />
         </div>
       </div>
