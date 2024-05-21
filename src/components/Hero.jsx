@@ -43,7 +43,6 @@ const Hero = () => {
       opacity: 1,
       ease: "power2.in",
       delay: 1.5,
-
     });
     gsap.fromTo(
       "#instagram",
@@ -105,23 +104,26 @@ const Hero = () => {
         <div>
           <h2
             id="welcome"
-            className="font-bold text-orange text-4xl md:text-5xl lg:text-7xl mt-4 opacity-0"
+            className="font-bold text-orange text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-4 opacity-0"
           >
             Welcome
           </h2>
           <p
             id="sub-heading"
-            className="font-bold text-white text-4xl md:text-5xl lg:text-7xl opacity-0"
+            className="font-bold text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl opacity-0"
           >
             Thanksgiving
           </p>
           <p
             id="thanks"
-            className="font-bold text-white text-2xl  md:3xl lg:text-4xl my-7 opacity-0"
+            className="font-bold text-white text-2xl  md:3xl xl:text-4xl my-7 opacity-0"
           >
             Gather here with grateful hearts.
           </p>
-          <p ref={paragraphRef} className="font-medium text-blue text-base md:text-lg lg:text-xl my-5 ">
+          <p
+            ref={paragraphRef}
+            className="font-medium text-blue text-base md:text-lg lg:text-xl my-5 "
+          >
             Lorem{" "}
             <span ref={spanRef} className="text-yellow">
               ipsum dolor
@@ -165,19 +167,23 @@ const Hero = () => {
                 />
               </div>
             </div>
-
           </div>
-
         </div>
-        <div className="flex flex-col items-center relative h-72 md:h-full">
-          <img id='boy' src={boy} className="absolute top-0 w-56 md:60 lg:w-80 opacity-0 " />
-          <img
-            id="food"
-            src={food}
-            // width={160}
-            // height={40}
-            className="w-28 md:w-28 lg:w-40 absolute -bottom-8 md:bottom-36 lg:bottom-1 right-20 md:right-8 lg:right-36 xl:right-52"
-          />
+        <div className="flex flex-col items-center  h-72 md:h-full">
+          <div className="relative">
+            <img
+              // id="boy"
+              src={boy}
+              className=" top-0 w-40 md:w-60 lg:w-64 xl:w-80"
+            />
+            <img
+              // id="food"
+              src={food}
+              // width={160}
+              // height={40}
+              className="w-20 md:w-24 lg:w-32 xl:w-40 absolute -bottom-4 md:-bottom-4 lg:-bottom-8 right-0 md:right-0 lg:right-0 xl:-bottom-12 xl:right-0"
+            />
+          </div>
         </div>
       </div>
     </section>

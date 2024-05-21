@@ -6,16 +6,22 @@ import { bgImage } from "./utils";
 
 const App = () => {
   return (
-    <main
-      className="bg-black w-[100vw] h-[100vh] bg-no-repeat p-6 md:py-16 md:px-8  lg:py-32 lg:px-44  bg-cover bg-left-top "
-      style={{
-        backgroundImage: `url(${bgImage})`,
-         height: "100% ",
-         width: "100%",
-      }}
-    >
-    <Navbar />
-      <Hero /> 
+    <main className="flex flex-col justify-center flex-1 items-center m-0 ">
+      <section
+        className="bg-black w-[100vw] h-[100vh]   p-6 md:py-6 md:px-8   xl:px-44 bg-left-top "
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          // backgroundAttachment: "fixed",
+
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: "100% ",
+          // width: "100%",
+        }}
+      >
+        <Navbar />
+        <Hero />
+      </section>
     </main>
   );
 };

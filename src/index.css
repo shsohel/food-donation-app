@@ -26,16 +26,9 @@ canvas {
   touch-action: none;
 }
 
-.scrim-max-width {
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  position: relative;
-  max-width: 1120px;
-}
 
 @layer base {
   html {
     font-family: Poppins, sans-serif;
   }
 }
-
