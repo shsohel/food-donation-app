@@ -7,6 +7,8 @@ import twitter from "/assets/images/Twitter_Icon.png";
 import boy from "/assets/images/boy_with_rounded.png";
 import food from "/assets/images/food_rounded.png";
 import hamburgerIcon from "/assets/images/menu_icon.png";
+import boyfood01 from "/assets/images/boy_food_01.jpg";
+
 
 export {
   bgImage,
@@ -17,4 +19,5 @@ export {
   boy,
   food,
   hamburgerIcon,
+  boyfood01
 };

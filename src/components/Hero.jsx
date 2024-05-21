@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import { boy, facebook, food, instagram, twitter } from "../utils";
+import { boy, boyfood01, facebook, food, instagram, twitter } from "../utils";
 import gsap from "gsap";
 import { useRef } from "react";
 import { useEffect } from "react";
@@ -183,6 +183,9 @@ const Hero = () => {
               // height={40}
               className="w-20 md:w-24 lg:w-32 xl:w-40 absolute -bottom-4 md:-bottom-4 lg:-bottom-8 right-0 md:right-0 lg:right-0 xl:-bottom-12 xl:right-0"
             />
+          </div>
+          <div >
+            <img className="h-full md:hidden  border-8 border-yellow  rounded rounded-bl-[9rem]" src={boyfood01}/>
           </div>
         </div>
       </div>

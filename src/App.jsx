@@ -8,7 +8,7 @@ const App = () => {
   return (
     <main className="flex flex-col justify-center items-center m-0 h-[100vh]">
       <section
-        className="bg-black w-[100vw] h-[100vh] p-6 md:py-12 md:px-16  bg-left-top "
+        className="bg-black w-[100vw] h-[100vh] p-6 md:py-12 md:px-16 lg:py-16 lg:px-20 xl:px-16 xl:py-20  bg-left-top "
         style={{
           backgroundImage: `url(${bgImage})`,
           // backgroundAttachment: "fixed",
