@@ -6,9 +6,9 @@ import { bgImage } from "./utils";
 
 const App = () => {
   return (
-    <main className="flex flex-col justify-center flex-1 items-center m-0 ">
+    <main className="flex flex-col justify-center items-center m-0 h-[100vh]">
       <section
-        className="bg-black w-[100vw] h-[100vh]   p-6 md:py-6 md:px-8   xl:px-44 bg-left-top "
+        className="bg-black w-[100vw] h-[100vh] p-6 md:py-12 md:px-16  bg-left-top "
         style={{
           backgroundImage: `url(${bgImage})`,
           // backgroundAttachment: "fixed",
@@ -19,8 +19,10 @@ const App = () => {
           // width: "100%",
         }}
       >
-        <Navbar />
-        <Hero />
+        <div className=" h-full">
+          <Navbar />
+          <Hero />
+        </div>
       </section>
     </main>
   );

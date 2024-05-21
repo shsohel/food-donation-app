@@ -169,8 +169,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center  h-72 md:h-full">
-          <div className="relative">
+        <div className=" flex flex-col items-center  h-72 md:h-full">
+          <div className="relative hidden md:block">
             <img
               // id="boy"
               src={boy}
